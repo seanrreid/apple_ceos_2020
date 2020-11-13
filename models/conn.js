@@ -1,7 +1,7 @@
-const host = 'rajje.db.elephantsql.com',
-  database = 'ohhdjrvp',
-  user = 'ohhdjrvp',
-  password = 'H5qkuqkn0ACVHaiGZyunDrs6jdSfbr4M';
+const host = 'lallah.db.elephantsql.com',
+  database = 'wyynaqgo',
+  user = 'wyynaqgo',
+  password = 'P2v-4H5OMWvr9JCA4olV0vqrreTq_fAv';
 
 const pgp = require('pg-promise')({
   query: function(e) {

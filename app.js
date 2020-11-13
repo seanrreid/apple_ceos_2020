@@ -5,7 +5,8 @@ const express = require("express"),
     logger = require("morgan");
 
 const indexController = require("./routes/index"),
-    ceosController = require("./routes/ceos");
+  ceosController = require("./routes/ceos"),
+  proxyController = require("./routes/proxy");
 
 const app = express();
 
@@ -21,5 +22,5 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexController);
 app.use("/ceos", ceosController);
-
+app.use("/proxy", proxyController);
 module.exports = app;
